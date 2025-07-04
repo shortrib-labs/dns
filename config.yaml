@@ -1,0 +1,74 @@
+---
+manager:
+  auto_arpa: true
+
+providers:
+  cloudflare:
+    class: octodns_cloudflare.CloudflareProvider
+    token: env/CLOUDFLARE_API_TOKEN
+    
+  google:
+    class: octodns_googlecloud.GoogleCloudProvider
+    project: env/GOOGLE_CLOUD_PROJECT
+    credentials_file: env/GOOGLE_APPLICATION_CREDENTIALS
+
+  yaml:
+    class: octodns.provider.yaml.YamlProvider
+    directory: ./zones
+    default_ttl: 300
+    enforce_order: True
+
+zones:
+  shortrib.io.:
+    sources:
+      - yaml
+    targets:
+      - google
+  
+  shortrib.dev.:
+    sources:
+      - yaml
+      - auto-arpa
+    targets:
+      - cloudflare
+  
+  shortrib.app.:
+    sources:
+      - yaml
+    targets:
+      - cloudflare
+  
+  shortrib.run.:
+    sources:
+      - yaml
+    targets:
+      - cloudflare
+  
+  shortrib.sh.:
+    sources:
+      - yaml
+    targets:
+      - cloudflare
+  
+  shortrib.life.:
+    sources:
+      - yaml
+    targets:
+      - google
+  
+  shortrib.net.:
+    sources:
+      - yaml
+    targets:
+      - google
+  
+  lab.shortrib.net.:
+    sources:
+      - yaml
+      - auto-arpa
+    targets:
+      - google
+      
+  # Note: You have both shortrib.app and shortrib.dev listed for both providers
+  # If you need to manage them in both providers, you'll need separate zone entries
+  # or use multiple targets. For now, I've set them to their first mentioned provider.

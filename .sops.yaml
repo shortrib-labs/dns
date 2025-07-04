@@ -1,0 +1,7 @@
+creation_rules:
+- path: .env
+  encrypted_regex: '(TOKEN|USERNAME|PASSWORD)'
+  pgp: 905EBD494A6AA2B774ED5C67621620CDA290611D
+- path: secrets/google-credentials.json
+  encrypted_regex: '^(private_key_id|private_key|client_email)$'
+  pgp: 905EBD494A6AA2B774ED5C67621620CDA290611D

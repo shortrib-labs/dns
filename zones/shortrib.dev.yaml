@@ -1,0 +1,30 @@
+---
+? ''
+: octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CAA
+  value:
+    flags: 0
+    tag: issue
+    value: letsencrypt.org
+concourse:
+  - type: A
+    value: 100.89.84.47
+  - type: AAAA
+    value: fd7a:115c:a1e0::b401:542f
+local:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 127.0.0.1
+registry:
+- ttl: 60
+  type: A
+  value: 100.64.80.89
+- ttl: 60
+  type: AAAA
+  value: fd7a:115c:a1e0::4b01:5059

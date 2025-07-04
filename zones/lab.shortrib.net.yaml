@@ -1,0 +1,51 @@
+---
+? ''
+: ttl: 21600
+  type: NS
+  values:
+  - ns-cloud-d1.googledomains.com.
+  - ns-cloud-d2.googledomains.com.
+  - ns-cloud-d3.googledomains.com.
+  - ns-cloud-d4.googledomains.com.
+bourbon:
+  - type: A
+    value: 100.76.179.11
+  - type: AAAA
+    value: fd7a:115c:a1e0::9235:b30b
+
+malt:
+  - type: A
+    value: 100.96.15.126
+  - type: AAAA
+    value: fd7a:115c:a1e0::c635:f7e
+
+potstill:
+  - type: A
+    value: 100.76.135.73
+  - type: AAAA
+    value: fd7a:115c:a1e0::8735:8749
+
+rye:
+  - type: A
+    value: 100.108.5.91
+  - type: AAAA
+    value: fd7a:115c:a1e0::d35:55b
+
+scotch:
+  - type: A
+    value: 100.120.245.78
+  - type: AAAA
+    value: fd7a:115c:a1e0::3135:f54e
+
+shine:
+  - type: A
+    value: 100.92.254.122
+  - type: AAAA
+    value: fd7a:115c:a1e0::6835:fe7a
+
+vcenter:
+  - type: A
+    value: 100.102.36.79
+  - type: AAAA
+    value: fd7a:115c:a1e0::9e35:244f
+

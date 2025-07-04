@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# OctoDNS
+.octodns/
+octodns.log
+
+# Environment files
+.env
+.env.local
+
+# Secrets
+secrets/*
+secrts/.google-credentials.json
+!secrets/google-credentials.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

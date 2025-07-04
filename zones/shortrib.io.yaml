@@ -1,0 +1,116 @@
+---
+? ''
+: - ttl: 300
+    type: CAA
+    values:
+    - flags: 0
+      tag: issue
+      value: letsencrypt.org
+    - flags: 0
+      tag: issue
+      value: pki.goog
+    - flags: 0
+      tag: issue
+      value: ssl.com
+    - flags: 0
+      tag: issue
+      value: amazon.com
+    - flags: 0
+      tag: issue
+      value: cloudflare.com
+    - flags: 0
+      tag: issue
+      value: google.com
+    - flags: 0
+      tag: issue
+      value: shortrib.io
+    - flags: 0
+      tag: iodef
+      value: mailto:security@shortrib.io
+  - ttl: 300
+    type: MX
+    values:
+    - exchange: aspmx.l.google.com.
+      preference: 1
+    - exchange: alt1.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt2.aspmx.l.google.com.
+      preference: 5
+    - exchange: alt3.aspmx.l.google.com.
+      preference: 10
+    - exchange: alt4.aspmx.l.google.com.
+      preference: 10
+  - ttl: 21600
+    type: NS
+    values:
+    - ns-cloud-c1.googledomains.com.
+    - ns-cloud-c2.googledomains.com.
+    - ns-cloud-c3.googledomains.com.
+    - ns-cloud-c4.googledomains.com.
+'20802221':
+  ttl: 300
+  type: CNAME
+  value: sendgrid.net.
+20250331110337pm._domainkey:
+  ttl: 300
+  type: TXT
+  value: k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCJILF2tchTAfY1bqicCSd68MUIwFHlirKdpmx0QAU5HauheVrGj3UIomN0mLswcPFVIK4jgYB1PpvR4dpxHcu6V5bysAG4pq5MfDHmiTRUq6ZlXEBv8+YCoPRtaRbJrjIDawtVnBIMF4ctuUi9TX125zWOX2UwdglwvgQsBoBstQIDAQAB
+_oktaverification.login:
+  ttl: 300
+  type: TXT
+  value: ddada9784d0546ca8e0ee55b245987f7
+charts:
+  ttl: 300
+  type: CNAME
+  value: registry.replicated.com.
+em3778:
+  ttl: 300
+  type: CNAME
+  value: u20802221.wl222.sendgrid.net.
+email.mg:
+  ttl: 300
+  type: CNAME
+  value: mailgun.org.
+enterprise:
+  ttl: 300
+  type: CNAME
+  value: get.replicated.com.
+images:
+  ttl: 300
+  type: CNAME
+  value: proxy.replicated.com.
+login:
+  ttl: 300
+  type: CNAME
+  value: dev-708894.customdomains.oktapreview.com.
+mg:
+- ttl: 300
+  type: MX
+  values:
+  - exchange: mxa.mailgun.org.
+    preference: 10
+  - exchange: mxb.mailgun.org.
+    preference: 10
+- ttl: 300
+  type: TXT
+  value: v=spf1 include:mailgun.org ~all
+pic._domainkey.mg:
+  ttl: 300
+  type: TXT
+  value: k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDipOclLtUtaH6BEBjl2xccbfx+VeCfTWsFCpYxVgYGthEa2FuW6dEWJW5oG+xqxhMCnBdAUAMXQKvFzhDLo4YNMLZZxpr9BLOhDw2mo0mQWW4UyHQ69tBxcZLvI866/wbEcCqd5rJeWACOTFIxAs1loDo4hOoUa1ugBCLffRcONQIDAQAB
+s1._domainkey:
+  ttl: 300
+  type: CNAME
+  value: s1.domainkey.u20802221.wl222.sendgrid.net.
+s2._domainkey:
+  ttl: 300
+  type: CNAME
+  value: s2.domainkey.u20802221.wl222.sendgrid.net.
+updates:
+  ttl: 300
+  type: CNAME
+  value: replicated.app.
+url9902:
+  ttl: 300
+  type: CNAME
+  value: sendgrid.net.

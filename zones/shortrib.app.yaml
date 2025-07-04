@@ -1,0 +1,11 @@
+---
+? ''
+: octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CAA
+  value:
+    flags: 0
+    tag: issue
+    value: letsencrypt.org

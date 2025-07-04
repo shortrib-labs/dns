@@ -1,0 +1,73 @@
+---
+_cf-custom-hostname.app:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: c1fb9cf3-5fde-49ec-85ea-86985bc8173a
+_cf-custom-hostname.distribution:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  values:
+  - 2c730eba-c5e9-4b5a-a1e2-d05ad338a598
+  - eaead14b-20a1-416c-8a2e-8b563efe3bbd
+_cf-custom-hostname.images:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: 4980ef67-11e7-4109-9567-0fce68952e45
+_cf-custom-hostname.proxy:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: f2b7ba8f-9647-47f0-afd7-1621c36d29b7
+_cf-custom-hostname.registry:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: TXT
+  value: 45039213-9ed3-42d0-851f-3af82de138d7
+app:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: replicated.app.
+distribution:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: replicated.app.
+images:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: proxy.replicated.com.
+proxy:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: proxy.replicated.com.
+registry:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: registry.replicated.com.
